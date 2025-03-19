@@ -23,10 +23,14 @@ pathspec==0.12.1
 platformdirs==4.3.6
 propcache==0.2.1
 psycopg2-binary==2.9.10
+pyaes==1.6.1
+pyasn1==0.6.1
 pydantic==2.10.6
 pydantic-settings==2.7.1
 pydantic_core==2.27.2
 python-dotenv==1.0.1
+rsa==4.9
 SQLAlchemy==2.0.37
+Telethon==1.39.0
 typing_extensions==4.12.2
 yarl==1.18.3
