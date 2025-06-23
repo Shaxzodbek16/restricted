@@ -1,85 +1,31 @@
-# Aiogram Bot Template
+# 🚀 Telegram Restricted Downloader Bot
 
-This repository provides a **ready-to-use** template for building Telegram bots with [Aiogram](https://docs.aiogram.dev/) and [SQLAlchemy](https://docs.sqlalchemy.org/) for database management. It supports **PostgreSQL** and **SQLite** out of the box, and includes a **Docker** and **docker-compose** setup for convenient deployment.
+> A simple Telegram bot built with Python that allows users to download media from restricted/private Telegram
+> channels.  
+> ⚠️ For educational purposes only. Respect Telegram's [Terms of Service](https://telegram.org/tos).
 
----
-
-## Table of Contents
-
-1. [Project Structure](#project-structure)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Configuration](#configuration)
-5. [Database Connections](#database-connections)
-    - [PostgreSQL (`postgres.py`)](#postgres.py)
-    - [SQLite (`sqlite.py`)](#sqlite.py)
-6. [Running Migrations](#running-migrations)
-7. [Running the Bot Locally](#running-the-bot-locally)
-8. [Logging](#logging)
-9. [Using Docker](#using-docker)
-    - [Dockerfile](#dockerfile)
-    - [docker-compose](#docker-compose)
-10. [Folder Details](#folder-details)
-11. [License](#license)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)
 
 ---
 
-## Project Structure
+## 📦 Features
 
-```plaintext
-.
-├── Dockerfile
-├── README.md
-├── alembic.ini
-├── app
-│   ├── __init__.py
-│   ├── bot
-│   │   ├── __init__.py
-│   │   ├── constants
-│   │   │   └── __init__.py
-│   │   ├── extensions
-│   │   │   └── __init__.py
-│   │   ├── filters
-│   │   │   └── __init__.py
-│   │   ├── handlers
-│   │   │   └── __init__.py
-│   │   ├── keyboards
-│   │   │   └── __init__.py
-│   │   ├── middlewares
-│   │   │   └── __init__.py
-│   │   ├── models
-│   │   │   └── __init__.py
-│   │   ├── routers
-│   │   │   └── __init__.py
-│   │   └── state
-│   │       └── __init__.py
-│   ├── core
-│   │   ├── __init__.py
-│   │   ├── constants
-│   │   │   └── __init__.py
-│   │   ├── databases
-│   │   │   ├── __init__.py
-│   │   │   ├── postgres.py
-│   │   │   └── sqlite.py
-│   │   ├── models
-│   │   │   ├── __init__.py
-│   │   │   ├── base.py
-│   │   │   └── users.py
-│   │   └── settings
-│   │       ├── __init__.py
-│   │       └── config.py
-│   └── server
-│       ├── __init__.py
-│       └── server.py
-├── docker-compose.yml
-├── entrypoint.sh
-├── example.env
-├── media
-│   └── all_mdiea_files.jpg
-├── migrations
-│   ├── README
-│   ├── env.py
-│   ├── script.py.mako
-│   └── versions
-├── requirements.txt
-└── venv
+- ✅ Download photos, videos, documents, and voice notes from private/restricted channels
+- ✅ Simple command interface
+- ✅ Admin-only access (optional)
+- ✅ Works with user sessions (not bot tokens)
+
+---
+
+## ⚙️ Setup
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/Shaxzodbek16/restricted
+cd restricted
+./entrypoint.sh
+```

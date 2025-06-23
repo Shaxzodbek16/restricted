@@ -4,9 +4,6 @@ black .
 
 pip freeze > requirements.txt
 
-export PYTHONPATH=/Users/shaxzodbek/Developer/restricted
-
+ export PYTHONPATH="$(pwd)"
 
 python app/server/server.py
-
-
